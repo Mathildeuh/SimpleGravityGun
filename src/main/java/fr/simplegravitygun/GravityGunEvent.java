@@ -51,7 +51,7 @@ public void onPlayerInteract(PlayerInteractEvent event) {
                                 cancel();
                             } else {
                                 // Calcule la position cible et la vélocité
-                                org.bukkit.Location targetLocation = player.getLocation().add(player.getLocation().getDirection().multiply(3));
+                                org.bukkit.Location targetLocation = player.getLocation().add(player.getLocation().getDirection().multiply(4));
                                 org.bukkit.util.Vector velocity = targetLocation.subtract(fallingBlock.getLocation()).toVector().multiply(1.0);
                                 fallingBlock.setVelocity(velocity);
                             }
