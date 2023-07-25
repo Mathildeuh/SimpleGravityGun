@@ -10,7 +10,7 @@ messages:
   block-canceled: '&7You broke a block'
   block-placed: '&7You placed a block'
   gun-released: '&7You released the gun'
-  already-using-gun: '&7You can''t use the gun now'
+  already-using-gun: '&7You are already using the gun'
 
 
 settings:
