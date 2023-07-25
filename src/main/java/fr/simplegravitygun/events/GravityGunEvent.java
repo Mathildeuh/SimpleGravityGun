@@ -37,7 +37,6 @@ public class GravityGunEvent implements Listener {
         Player player = e.getPlayer();
         Block block = e.getClickedBlock();
 
-        if(block.isLiquid() || block.isPassable() || block.isEmpty()) return;
 
         // Vérifie si le joueur a le "gravity gun" dans la main
 
@@ -50,6 +49,8 @@ public class GravityGunEvent implements Listener {
             plugin.cooldown.put(player, 1);
 
             if (block != null) {
+                 if(block.isLiquid() || block.isPassable() || block.isEmpty()) return;
+
                 if (e.getAction() == Action.RIGHT_CLICK_BLOCK) {
                     if (lastPlayer == null || lastPlayer != player || lastBlock != block) {
 
