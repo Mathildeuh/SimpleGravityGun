@@ -49,7 +49,7 @@ public void onPlayerInteract(PlayerInteractEvent event) {
                         fallingBlock.setVelocity(velocity);
                     }
                 }
-            }.runTaskTimerAsynchronously(plugin, 0, 1);
+            }.runTaskTimer(plugin, 0, 1);
         }
     } else {
         // Si le joueur n'a pas le "gravity gun" dans la main, le bloc revient à sa position initiale
