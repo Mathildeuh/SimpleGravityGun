@@ -10,7 +10,7 @@ public final class SimpleGravityGun extends JavaPlugin {
         // Plugin startup logic
 
         // Ajoute une commande pour donner un bâton enchanté nommé GravityGun
-        getCommand("gravitygun").setExecutor((CommandExecutor) new GravityGunCommand());
+        getCommand("gravitygun").setExecutor(new GravityGunCommand());
 
         // Ajoute l'événement pour le gravitygun dans un fichier nommé GravityGunEvent.class
         getServer().getPluginManager().registerEvents(new GravityGunEvent(this), this);
@@ -18,7 +18,7 @@ public final class SimpleGravityGun extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        
+
         // Plugin shutdown logic
     }
 }
