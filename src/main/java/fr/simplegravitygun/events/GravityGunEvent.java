@@ -55,7 +55,7 @@ public class GravityGunEvent implements Listener {
                     if (lastPlayer == null || lastPlayer != player || lastBlock != block) {
 
                         if (fallingBlockHashMap.containsKey(player)) {
-                            player.sendMessage("§cVous devez d'abord annuler le bloc précédent !");
+                            player.sendMessage(Messages.getCant_use_now());
                             return;
                         }
                         FallingBlock fallingBlock = block.getWorld().spawn(block.getLocation().add(0, 0.2, 0), FallingBlock.class);

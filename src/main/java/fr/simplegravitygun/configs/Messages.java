@@ -11,6 +11,7 @@ public class Messages {
     static String block_canceled;
     static String block_placed;
     static String gun_released;
+    static  String cant_use_now;
 
     public Messages(SimpleGravityGun plugin) {
         this.plugin = plugin;
@@ -19,7 +20,12 @@ public class Messages {
         block_canceled = plugin.getConfig().getString("messages.block-canceled");
         block_placed = plugin.getConfig().getString("messages.block-placed");
         gun_released = plugin.getConfig().getString("messages.gun-released");
+        cant_use_now = plugin.getConfig().getString("messages.cant-use-now");
 
+    }
+
+    public static String getCant_use_now() {
+        return cant_use_now;
     }
 
     public static String getBlock_catch() {
