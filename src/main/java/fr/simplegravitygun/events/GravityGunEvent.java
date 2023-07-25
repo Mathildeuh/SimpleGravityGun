@@ -1,4 +1,4 @@
-package fr.simplegravitygun;
+package fr.simplegravitygun.events;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -81,5 +81,7 @@ public class GravityGunEvent implements Listener {
             }
         }
     }
+
+
 }
 
