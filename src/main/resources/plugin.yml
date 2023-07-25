@@ -1,0 +1,4 @@
+name: SimpleGravityGun
+version: '${version}'
+main: fr.simplegravitygun.SimpleGravityGun
+api-version: '1.19'
