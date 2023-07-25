@@ -25,7 +25,7 @@ public class Messages {
     }
 
     public static String getCant_use_now() {
-        return cant_use_now;
+        return ChatColor.translateAlternateColorCodes('&', cant_use_now);
     }
 
     public static String getBlock_catch() {
