@@ -56,7 +56,6 @@ public class GravityGunEvent implements Listener {
                         fallingBlock.setDropItem(true);
                         fallingBlock.setHurtEntities(false);
                         fallingBlock.setInvulnerable(true);
-                        fallingBlock.setCustomName("Gravity Gun - " + block.getType().name().toLowerCase());
                         fallingBlock.setCustomNameVisible(true);
                         fallingBlock.setFreezeTicks(999999999);
                         player.sendMessage("§aBloc capturé !");
@@ -80,6 +79,8 @@ public class GravityGunEvent implements Listener {
                                     org.bukkit.Location targetLocation = player.getLocation().add(player.getLocation().getDirection().multiply(2.5)).add(0, 1.2, 0);
                                     org.bukkit.util.Vector velocity = targetLocation.subtract(fallingBlock.getLocation()).toVector();
                                     fallingBlock.setVelocity(velocity);
+                                    fallingBlock.setCustomName("Gravity Gun - " + fallingBlock.getLocation().getX() + "/" + fallingBlock.getLocation().getY() + "/" + fallingBlock.getLocation().getZ());
+
                                 }
                                 if (fallingBlock.isDead()) {
                                     fallingBlockHashMap.remove(player);
