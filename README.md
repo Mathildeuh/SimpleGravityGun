@@ -9,7 +9,7 @@ Le plugin Gravity Gun est un plugin Bukkit qui ajoute une fonctionnalité de "gr
 
 ## Installation
 
-1. Téléchargez le fichier JAR du plugin depuis [ici](lien_vers_le_fichier_jar).
+1. Téléchargez le fichier JAR du plugin depuis [ici](https://github.com/AX3L25/SimpleGravityGun/releases/download/v1.0/SimpleGravityGun-1.0.jar).
 2. Placez le fichier JAR dans le dossier des plugins de votre serveur Bukkit.
 3. Redémarrez votre serveur Bukkit.
 
