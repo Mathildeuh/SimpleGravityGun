@@ -1,4 +1,5 @@
 package fr.simplegravitygun;
+
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.FallingBlock;
@@ -35,7 +36,7 @@ public void onPlayerInteract(PlayerInteractEvent event) {
     if (player.getInventory().getItemInMainHand().getType() == Material.STICK) {
         // Vérifie si le bloc cliqué n'est pas nul
         if (block != null) {
-            if (event.getAction() == Action.LEFT_CLICK_BLOCK) {
+            if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
                 if (lastPlayer == null || lastPlayer != player || lastBlock != block) {
                     FallingBlock fallingBlock = block.getWorld().spawn(block.getLocation(), FallingBlock.class);
                     block.setType(Material.AIR);
@@ -50,8 +51,8 @@ public void onPlayerInteract(PlayerInteractEvent event) {
                                 cancel();
                             } else {
                                 // Calcule la position cible et la vélocité
-                                org.bukkit.Location targetLocation = player.getLocation().add(player.getLocation().getDirection().multiply(2));
-                                org.bukkit.util.Vector velocity = targetLocation.subtract(fallingBlock.getLocation()).toVector().multiply(0.1);
+                                org.bukkit.Location targetLocation = player.getLocation().add(player.getLocation().getDirection().multiply(3));
+                                org.bukkit.util.Vector velocity = targetLocation.subtract(fallingBlock.getLocation()).toVector().multiply(1.0);
                                 fallingBlock.setVelocity(velocity);
                             }
                         }
@@ -61,11 +62,10 @@ public void onPlayerInteract(PlayerInteractEvent event) {
                     lastBlock = block;
                 }
             } else if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-                // Propulse le bloc pris avec le "gravity gun"
+                // Vérifie si le bloc n'est pas déjà pris
                 if (block == lastBlock) {
-                    org.bukkit.util.Vector velocity = player.getLocation().getDirection().multiply(4);
+                    org.bukkit.util.Vector velocity = player.getLocation().getDirection().multiply(8);
                     block.getWorld().spawnFallingBlock(block.getLocation(), block.getBlockData()).setVelocity(velocity);
-
                 }
             }
         }
