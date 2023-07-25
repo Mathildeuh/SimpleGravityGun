@@ -15,9 +15,9 @@ Le plugin Gravity Gun est un plugin Bukkit qui ajoute une fonctionnalité de "gr
 
 ## Utilisation
 
-1. Donnez aux joueurs le bâton "Gravity Gun" en utilisant la commande `/give` ou en le plaçant dans un coffre ou un autre conteneur.
+1. Donnez aux joueurs le bâton "Gravity Gun" en utilisant la commande `/gravitygun` ou en le plaçant dans un coffre ou un autre conteneur.
 2. Les joueurs peuvent utiliser le bâton "Gravity Gun" en le tenant dans leur main principale.
-3. Lorsqu'un joueur fait un clic droit sur un bloc avec le bâton, le bloc est transformé en un bloc en chute libre et est propulsé dans la direction dans laquelle le joueur regarde.
+3. Lorsqu'un joueur fait un clic droit sur un bloc avec le bâton, le bloc est transformé en un bloc en chute libre.
 4. Si le joueur est accroupi, le bloc en chute libre est supprimé et le bloc original est restauré à sa position initiale.
 
 ## Configuration
