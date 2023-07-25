@@ -1,6 +1,7 @@
 package fr.simplegravitygun;
 
-import org.bukkit.command.CommandExecutor;
+import fr.simplegravitygun.commands.GravityGunCommand;
+import fr.simplegravitygun.events.GravityGunEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class SimpleGravityGun extends JavaPlugin {
