@@ -55,7 +55,7 @@ public class GravityGunEvent implements Listener {
                     if (lastPlayer == null || lastPlayer != player || lastBlock != block) {
 
                         if (fallingBlockHashMap.containsKey(player)) {
-                            player.sendMessage(Messages.getCant_use_now());
+                            player.sendMessage(Messages.getAlready_using_gun());
                             return;
                         }
                         FallingBlock fallingBlock = block.getWorld().spawn(block.getLocation().add(0, 0.2, 0), FallingBlock.class);
