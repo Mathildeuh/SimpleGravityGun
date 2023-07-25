@@ -1,0 +1,20 @@
+gravitygun:
+  item: STICK
+  name: '&6Gravity Gun'
+  lore:
+    - '&7Right click to grab a block'
+    - '&7Left click to throw the block'
+
+messages:
+  block-catch: '&7You caught a block'
+  block-canceled: '&7You broke a block'
+  block-placed: '&7You placed a block'
+  gun-released: '&7You released the gun'
+
+
+settings:
+  enable-lazer: true
+  lazer-color:
+    r: 255
+    g: 0
+    b: 0
