@@ -1,7 +1,11 @@
 name: SimpleGravityGun
-version: '${version}'
+version: '1.3'
 main: fr.simplegravitygun.SimpleGravityGun
 api-version: '1.19'
+authors:
+  - Axel
+  - Mathildeuh
+
 commands:
   gravitygun:
     description: Command for the gravity gun

@@ -33,5 +33,3 @@ java {
 
 
 compileJava.options.encoding("UTF-8")
-
-setLibsDirName("E:\\Servers\\1.19.4\\plugins")
