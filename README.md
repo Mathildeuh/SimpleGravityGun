@@ -30,4 +30,4 @@ Les contributions à ce plugin sont les bienvenues ! Si vous souhaitez contribue
 
 ## Auteur
 
-Le plugin Gravity Gun a été développé par [Axel].
+Le plugin Gravity Gun a été développé par Axel et Mathildeuh.
