@@ -1,21 +1,22 @@
 gravitygun:
-  item: STICK
-  name: '&6Gravity Gun'
+  item: STICK # default: STICK
+  name: '&6Gravity Gun' # default: '&6Gravity Gun'
   lore:
-    - '&7Right click to grab a block'
-    - '&7Left click to throw the block'
+    - '&7Right click to grab a block' # default: '&7Right click to grab a block'
+    - '&7Sneak to place/fall the block' # default: '&7Sneak to place/fall the block'
 
 messages:
-  block-catch: '&7You caught a block'
-  block-canceled: '&7You broke a block'
-  block-placed: '&7You placed a block'
-  gun-released: '&7You released the gun'
-  already-using-gun: '&7You are already using the gun'
+  block-catch: '&7You caught a block' # default: '&7You caught a block'
+  block-placed-sneak: '&7You fall a block' # default: '&7You fall a block'
+  block-placed: '&7You placed a block' # default: '&7You placed a block'
+  gun-released: '&7You released the gun' # default: '&7You released the gun'
+  already-using-gun: '&7You are already using the gun' # default: '&7You are already using the gun'
 
 
 settings:
-  enable-lazer: true
+  mode: "fall" # "fall" or "place", default: "fall"
+  enable-lazer: true # default: true
   lazer-color:
-    r: 255
-    g: 0
-    b: 0
+    r: 0 # default: 0
+    g: 0 # default: 0
+    b: 255 # default: 255

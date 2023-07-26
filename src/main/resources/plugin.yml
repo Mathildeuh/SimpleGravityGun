@@ -1,5 +1,5 @@
 name: SimpleGravityGun
-version: '1.3'
+version: '1.4'
 main: fr.simplegravitygun.SimpleGravityGun
 api-version: '1.19'
 authors:
